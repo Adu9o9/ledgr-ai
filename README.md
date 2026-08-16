@@ -1,17 +1,27 @@
-# ledgr_ai
+# Ledgr.ai 💳
 
-A new Flutter project.
+A privacy-first, offline-first AI budgeting mobile application engineered for high performance and tactile user experiences.
 
-## Getting Started
+**[🔗 View Live Vercel Demo](https://ledgr-ai-pi.vercel.app/)** | **[▶️ Watch Architecture & Demo Video](https://drive.google.com/file/d/1qvTXxbxKzmUekglTLKS0G8ary0gSazLE/view?usp=sharing)**
 
-This project is a starting point for a Flutter application.
+## 🏗️ System Architecture
+Ledgr.ai is designed to prioritize data privacy and seamless state management without relying on heavy cloud databases for core functionality. 
 
-A few resources to get you started if this is your first Flutter project:
+*   **Frontend Framework:** Flutter (Dart)
+*   **UI/UX Component System:** CRED NeoPOP (Neumorphic tactile interfaces)
+*   **State Management:** Riverpod (Compile-safe dependency injection)
+*   **Local Persistence:** Hive NoSQL (Offline-first, encrypted binary storage)
+*   **AI Engine Integration:** Gemini 3.6 Flash REST API (JSON structured prompt engineering)
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## 🚀 Core Features
+1. **Zero-Latency Logging:** Utilizing Hive's key-value store paired with Riverpod state notifiers, expense logging operates entirely on the device without network bottlenecks.
+2. **Privacy-First Data Aggregation:** Raw transaction data never leaves the device. Data is aggregated and anonymized locally before being transmitted for analysis.
+3. **Actionable AI Insights:** Integrates with Gemini 3.6 Flash via direct HTTP requests to parse localized spending habits and return strict, JSON-formatted financial advice.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Build Instructions
+To run this project locally:
+```bash
+git clone [https://github.com/Adu9o9/ledgr-ai.git](https://github.com/Adu9o9/ledgr-ai.git)
+cd ledgr-ai
+flutter pub get
+flutter run -d chrome
